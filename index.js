@@ -29,7 +29,7 @@ app.get('/api/fetch', (req, resp)=>{
         //and stringify is cnvert a javascript value into a json string
         var jsonOutput=JSON.parse(JSON.stringify(result))
         //console.log(jsonOutput[0])
-        //resp.send(jsonOutput[0])
+        resp.send(jsonOutput[0])
         resp.send(result)
     })
 })
