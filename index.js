@@ -5,10 +5,10 @@ const app = express()
 //const 
 app.use(express.json())
 const connection = mysql.createConnection({
-    host: 
-    user: 
-    password: 
-    database: 
+    host: process.env.host
+    user: process.env.user
+    password: process.env.password
+    database: process.env.database
 })
 connection.connect((error, result)=>{
     if(error){
